@@ -46,20 +46,32 @@ console.log("------------------");
 /************  Ternäre (ternary) Schreibweise ************/
 // console.log( (isJohnOlder) ? "John is older" : "Mark is older");
 
-/************ IF - ELSE IF  ************/
-// mit alternativen Fällen (älter, jünger, gleich alt)
+// /************ IF - ELSE IF  ************/
+// // mit alternativen Fällen (älter, jünger, gleich alt)
 
-if (isJohnOlder) 
-    {
-        console.log("John ist älter."); // true
-}
+// if (isJohnOlder) 
+//     {
+//         console.log("John ist älter."); // true
+// }
 
-else if(isJohnEqual)
-    {
-        console.log("John ist gleich alt."); // equal
-}
+// else if(isJohnEqual)
+//     {
+//         console.log("John ist gleich alt."); // equal
+// }
 
-else 
-    {
-        console.log("John ist jünger."); // false
-}
+// else 
+//     {
+//         console.log("John ist jünger."); // false
+// }
+
+/****** Fallunterscheidung / SWITCH|CASE 1 ******/
+
+const firstName = "Jane";
+let job;
+
+job = "driver";  // .. fährt TAXI! / UBER
+job = "diver"; // .. taucht im Rhein! 
+job = "artist"; // .. malt ein Bild!
+job = "pilot"; // .. macht etwas anderes! --> default
+job = "teacher"; // .. unterrichtet!
+job = "instructor"; // .. unterrichtet!
