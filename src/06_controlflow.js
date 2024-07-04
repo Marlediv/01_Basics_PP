@@ -33,7 +33,6 @@
 // mit Alternative  
 // entweder ja oder nein
 
-<<<<<<< HEAD
 // if (isJohnOlder) 
 //     {
 //         console.log("John ist älter.");
@@ -107,4 +106,3 @@ else
     {
         console.log("John ist jünger.");
 }
->>>>>>> 9ae5aa8555c89f4a4cf44f3e40837a6ae2fd78da
