@@ -21,14 +21,14 @@
 // ausgabeName();
 
 // Funktion
-function ausgabeName()
-    {
+// function ausgabeName()
+//     {
 
-    //interne Variable | What happens in VEAGS...
-    let firstName = "Sara"
-    console.log("Hallo " + firstName + "!");
+//     //interne Variable | What happens in VEAGS...
+//     let firstName = "Sara"
+//     console.log("Hallo " + firstName + "!");
 
-}
+// }
 
 // console.log(firstName); // Fehler : scope!
 
@@ -68,7 +68,7 @@ function ausgabeName()
 // Postulat: one function = one job (uncle Bob)
 // SRP single responsibility principle
 
-ausgabeNamenSRP("Max","Mütze");
+// ausgabeNamenSRP("Max","Mütze");
 
 function ausgabeNamenSRP(firstName, familyName) 
     {
@@ -79,5 +79,33 @@ function ausgabeNamenSRP(firstName, familyName)
 
     // 2. Funktionalität: string output
     console.log(outputStr);
+
+}
+
+/***** Funktionen 03b *****/
+
+// 1. Funktionalität: string composing
+
+output(getString("Max", "Mütze"));
+
+function getString(firstName, familyName) 
+    {
+
+        const GAP = " ";
+        let outputStr = "Hallo, " + firstName + GAP + familyName + "!";
+        return outputStr; // return schickt die Daten an den Call...
+        console.log(outputData); // nach RETURN wird die Funktion abgebrochen!
+}
+
+// 2. Funktionalität: string output
+
+// output("hi");
+// output(2);
+// output(true);
+
+function output(outputData) 
+    {
+
+        console.log(outputData);
 
 }
