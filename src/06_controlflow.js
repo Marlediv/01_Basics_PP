@@ -97,7 +97,7 @@ switch (job)
     console.log(firstName + " macht etwas anderes!");
         break;
 }
-=======
+
 if (isJohnOlder) 
     {
         console.log("John ist älter.");
