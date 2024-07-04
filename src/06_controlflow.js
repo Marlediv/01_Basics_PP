@@ -66,8 +66,8 @@
 
 /****** Fallunterscheidung / SWITCH|CASE 1 ******/
 
-const firstName = "Jane";
-let job;
+// const firstName = "Jane";
+// let job;
 
 // job = "driver";  // .. fährt TAXI! / UBER
 // job = "diver"; // .. taucht im Rhein! 
@@ -76,33 +76,33 @@ let job;
 // job = "teacher"; // .. unterrichtet!
 // job = "instructor"; // .. unterrichtet!
 
-switch (job) 
-    {
-    case "driver": // --> job == "driver"
-        console.log(firstName + " fährt Taxi");
-        break;
-    case "diver": // --> job == "diver"
-        console.log(firstName + " taucht im Rhein!");
-        break;
-    case "artist": // --> job == "artist"
-        console.log(firstName + " malt ein Bild!");
-        break;
-    case "teacher": // --> job == "teacher"
-    case "instructor":
-        console.log(firstName + " unterrichtet!");
-        break;
+// switch (job) 
+//     {
+//     case "driver": // --> job == "driver"
+//         console.log(firstName + " fährt Taxi");
+//         break;
+//     case "diver": // --> job == "diver"
+//         console.log(firstName + " taucht im Rhein!");
+//         break;
+//     case "artist": // --> job == "artist"
+//         console.log(firstName + " malt ein Bild!");
+//         break;
+//     case "teacher": // --> job == "teacher"
+//     case "instructor":
+//         console.log(firstName + " unterrichtet!");
+//         break;
     
-    default: // WICHTIG!
-    console.log(firstName + " macht etwas anderes!");
-        break;
-}
+//     default: // WICHTIG!
+//     console.log(firstName + " macht etwas anderes!");
+//         break;'
 
-if (isJohnOlder) 
-    {
-        console.log("John ist älter.");
-} 
 
-else 
-    {
-        console.log("John ist jünger.");
-}
+// if (isJohnOlder) 
+//     {
+//         console.log("John ist älter.");
+// } 
+
+// else 
+//     {
+//         console.log("John ist jünger.");
+// }
