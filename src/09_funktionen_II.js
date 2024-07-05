@@ -5,17 +5,38 @@
 0. a+b | a-b | a*b | a/b  --> Ergebnis c 
 
 1. Dateneingabe + -überprüfung :  
-2. Auswahl Rechenart : 
+2. Auswahl Rechenart : check!
 3. Fkt. Grundrechenarten : check!
 4. Ausgabe in Konsole : check!
 */
 
-//  Auswahl Rechenart
+// Dateneingabe + -überprüfung
 
-const ERROR_STR_GEN = "Irgendwas ging schief!";
+const prompt = require('prompt-sync')({sigint: true});
+
+const ERROR_STR_GEN = "Irgendwas ging schief!"
 const ERROR_STR_DIV = "Teilen durch 0 nicht möglich!"
 
-// module: calculator | tests:
+startApp()
+function startApp() {
+	output(calculator(getNum1(),getNum2(),getOp()));
+}
+
+function getNum1() {
+	return parseInt(prompt("Zahl 1: "));
+}
+
+function getNum2() {
+	return parseInt(prompt("Zahl 2: "));
+}
+
+function getOp() {
+	return prompt("Wähle einen Operator: ");
+}
+
+//  Auswahl Rechenart
+
+// module: calculator | tests: check!
 // agreement : "+","-","*",":","/"
 // output(calculator(3,2,"+"));
 // output(calculator(3,2,"-"));
