@@ -7,17 +7,12 @@
 1. Dateneingabe + -überprüfung :  
 2. Auswahl Rechenart : 
 3. Fkt. Grundrechenarten : 
-4. Ausgabe in Konsole : 
+4. Ausgabe in Konsole : check!
 */
 
 
 
-
-
-
-
-
-// module: output | test:
+// module: output | test: check!
 // output("hello");
 // output(2);
 function output(outputData) {
