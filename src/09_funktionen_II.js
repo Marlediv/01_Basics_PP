@@ -27,13 +27,14 @@ function multiply(a,b) {
 // output(divide(3,2));
 // output(divide(3,-2));
 // output(divide(0,2));
-// output(divide(3,0));
-// output(divide(0,0));
+output(divide(3,0));
+output(divide(0,0));
+
 function divide(a,b) {
-	if (b != 0) {
-		return a / b ;
+	if (b == 0) {
+		return ERROR_STR_DIV; // Ausnahme!
 	} else {
-		return ERROR_STR_DIV
+		return a / b; // Regel!
 	}
 	
 }
