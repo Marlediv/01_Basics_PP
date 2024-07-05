@@ -10,9 +10,44 @@
 4. Ausgabe in Konsole : check!
 */
 
-// Fkt. Grundrechenarten
+//  Auswahl Rechenart
 
+const ERROR_STR_GEN = "Irgendwas ging schief!";
 const ERROR_STR_DIV = "Teilen durch 0 nicht möglich!"
+
+// module: calculator | tests:
+// agreement : "+","-","*",":","/"
+// output(calculator(3,2,"+"));
+// output(calculator(3,2,"-"));
+// output(calculator(3,2,"*"));
+// output(calculator(3,2,":"));
+// output(calculator(3,2,"/"));
+// output(calculator(3,0,"/"));
+// output(calculator(3,2,"#?!"));
+
+function calculator(a, b, op) {  // WAS soll gemacht werden?
+	switch (op) {
+		case "+": // Addition
+			return add(a,b);
+
+		case "-": // Subtraktion
+		return subtract(a,b);
+
+		case "*": // Multiplikation
+		return multiply(a,b);
+
+		case "/": // Division
+		case ":":	
+		return divide(a,b);
+			
+		default:
+			return ERROR_STR_GEN
+	}
+}
+
+/**WIE sollen die Aufgaben gelöst werden? */
+
+// Fkt. Grundrechenarten
 
 // module: multiplication a * b |  test: check!
 // output(multiply(3,2));
@@ -27,8 +62,8 @@ function multiply(a,b) {
 // output(divide(3,2));
 // output(divide(3,-2));
 // output(divide(0,2));
-output(divide(3,0));
-output(divide(0,0));
+// output(divide(3,0));
+// output(divide(0,0));
 
 function divide(a,b) {
 	if (b == 0) {
