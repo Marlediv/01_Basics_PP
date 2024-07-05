@@ -12,6 +12,8 @@
 
 // Fkt. Grundrechenarten
 
+const ERROR_STR_DIV = "Teilen durch 0 nicht möglich!"
+
 // module: multiplication a * b |  test: check!
 // output(multiply(3,2));
 // output(multiply(3,-2));
@@ -31,7 +33,7 @@ function divide(a,b) {
 	if (b != 0) {
 		return a / b ;
 	} else {
-		return "Teilen durch 0 nicht möglich!"
+		return ERROR_STR_DIV
 	}
 	
 }
