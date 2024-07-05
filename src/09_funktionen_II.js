@@ -33,9 +33,8 @@ output(divide(0,0));
 function divide(a,b) {
 	if (b == 0) {
 		return ERROR_STR_DIV; // Ausnahme!
-	} else {
-		return a / b; // Regel!
 	}
+		return a / b; // Regel!
 	
 }
 
