@@ -154,10 +154,10 @@ function getSentenceArr2(arr) {
     // return str ;
 
     // 2. Iteration: Struktur erzeugen + trimmen()
-    for (let i = 0; i < arr.length; i++) {
-        str += arr[i] + GAP; 
-    }
-    return str.trim() + PUNCT;
+    // for (let i = 0; i < arr.length; i++) {
+    //     str += arr[i] + GAP; 
+    // }
+    // return str.trim() + PUNCT;
 
 }
 
