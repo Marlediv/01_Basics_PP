@@ -97,26 +97,20 @@ hier: Verkettung eines Strings // Transponierung
 // --> "Ich bin Max Mütze."
 // output(getSentence("Ich","bin","Max","Mütze"));
 // output(getSentence("Ich","bin","die","coole","Maxine","Mützerich"));
-function getSentence(word1,word2,word3,word4,word5,word6) {
-    const GAP = " ";
-    const PUNCT = ".";
-    let str =   word1 + GAP +
-                word2 + GAP +
-                word3 + GAP +
-                word4 + GAP +
-                word5 + GAP +
-                word6 +
-                PUNCT;
+// function getSentence(word1,word2,word3,word4,word5,word6) {
+//     const GAP = " ";
+//     const PUNCT = ".";
+//     let str =   word1 + GAP +
+//                 word2 + GAP +
+//                 word3 + GAP +
+//                 word4 + GAP +
+//                 word5 + GAP +
+//                 word6 +
+//                 PUNCT;
 
-    return str;
-}
+//     return str;
+// }
 
-
-// Modul: Ausgabe in Konsole : Test
-// output("hi"); 
-function output(outputStr) {
-    console.log(outputStr);
-}
 
 
 /*** 01a. Funktionalität mit Array 1 */
@@ -125,36 +119,46 @@ function output(outputStr) {
 // arr[0],arr[1] ... arr[n-1] :: Numerische Struktur (0,1,2,3 ... n)
 // --> Transformation semantisches Problem --> numerisches Problem
 // output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
-function getSentenceArr(arr) {
-    const GAP = " ";
-    const PUNCT = ".";
-    let str =   arr[0] + GAP +
-                arr[1] + GAP +
-                arr[2] + GAP +
-                arr[3] + GAP +
-                arr[4] + GAP +
-                arr[5] +
-                PUNCT;
+// function getSentenceArr(arr) {
+//     const GAP = " ";
+//     const PUNCT = ".";
+//     let str =   arr[0] + GAP +
+//                 arr[1] + GAP +
+//                 arr[2] + GAP +
+//                 arr[3] + GAP +
+//                 arr[4] + GAP +
+//                 arr[5] +
+//                 PUNCT;
 
-    return str;
-}
+//     return str;
+// }
 
 /*** 01b. Funktionalität mit Array 2  */
 // Transponierung:  untereinander ---> nebeneinander
 // Helge Schneider: Anananandereihung ...
 
 
-// output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
-function getSentenceArr(arr) {
+output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
+function getSentenceArr2(arr) {
     const GAP = " ";
     const PUNCT = ".";
-    let str =   arr[0] + GAP +
-                arr[1] + GAP +
-                arr[2] + GAP +
-                arr[3] + GAP +
-                arr[4] + GAP +
-                arr[5] +
-                PUNCT;
+    let str = "";
 
-    return str;
+// 1. Iteration: Struktur GENAU erzeugen ...
+for (let i = 0; i < arr.length; i++) {
+    if (i != arr.length - 1) {  // wenn du noch nicht am Ende des Arrays bist ... 
+        str += arr[i] + GAP; // entweder
+    } else {
+        str += arr[i] + PUNCT; // oder
+    }
+}
+
+return str ;
+}
+
+
+// // Modul: Ausgabe in Konsole : Test
+// // output("hi"); 
+function output(outputStr) {
+    console.log(outputStr);
 }
