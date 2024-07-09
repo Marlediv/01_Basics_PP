@@ -25,7 +25,7 @@ output(getSentence(["Ich","hätt","gern","die","Platt","von","dene","zwei","diwo
 //     // verbindet die Wörter im Array mit Leerzeichen, um den Basis-Satz zu formen
 //     let sentence = arr.join(" ");
     
-//     // Bestimmt die passende Interpunktion basierend auf dem 'op' Parameter
+    // Bestimmt die passende Interpunktion basierend auf dem 'op' Parameter
 //     let punctuation;
 //     if (op == "S") {
 //         punctuation = ".";
@@ -71,7 +71,7 @@ function getSentence(arr, op) {
     return sentence + punctuation;
 }
 
-// Modul: Ausgabe in der Konsole : Test
+// // Modul: Ausgabe in der Konsole : Test
 function output(outputData) {
     console.log(outputData);
 }
